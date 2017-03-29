@@ -12,30 +12,36 @@ import java.util.Scanner;
 //    生成一个随机整数，
 public class EE1 {
 
+    private static int x;
+    private static int counter;
+    private static String result;
+
     public static void main(String[] args) {
-        int counter = 0;
-
         Random random = new Random();
-        int x = random.nextInt();
+        x = random.nextInt();
         System.out.println(x);
+        guess();
+    }
 
+    private static void guess() {
+        System.out.println("请输入一个数：");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("请输入整数：");
         int y = scanner.nextInt();
 
-        if (x > y) {
-            System.out.println("小了！");
+        if (y > x) {
+            System.out.println("大了");
             counter++;
-            System.out.println("请输入整数：");
-            y = scanner.nextInt();
-        } else if (x < y) {
-            System.out.println("大了！");
+            result = "大了";
+            guess();
+        } else if (y < x) {
+            System.out.println("小了");
+            result = "小了";
             counter++;
-            System.out.println("请输入整数：");
-            y = scanner.nextInt();
+            guess();
         } else {
-            System.out.println("对了！");
+            System.out.println("猜对了！");
             counter++;
+            System.out.println(counter);
         }
     }
 }
