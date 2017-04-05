@@ -5,7 +5,7 @@ package test;
  * 2017/4/1 8:22
  * JavaSE_2017.
  */
-public class StringTest {
+public class StringTest  {
     public static void main(String[] args) {
         String s = "hello";
         String s1 = "asdf";
