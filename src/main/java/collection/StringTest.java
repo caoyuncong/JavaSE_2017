@@ -68,15 +68,6 @@ public class StringTest {
 
         System.out.println(String.valueOf(chars));
         System.out.println(String.valueOf(chars,1,3));
-
-
-
-
-
-
-
-
-
     }
 
     private static String toLowerCase(String origin) {
