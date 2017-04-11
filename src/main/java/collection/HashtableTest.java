@@ -14,9 +14,13 @@ public class HashtableTest {
         Hashtable<Integer, String> hashtable = new Hashtable<>();
         hashtable.put(1, "hi");
         hashtable.put(2, "hello");
-        hashtable.put(2, "hello");
-        hashtable.put(2, "hello");
+        hashtable.put(2, "test");
+        hashtable.put(22, "hello");
+//        hashtable.put(null, "test"); // java.lang.NullPointerException
+//        hashtable.put(3, null); // java.lang.NullPointerException
 
+        hashtable.remove(2);
+//        hashtable.clear();
         System.out.println(hashtable.get(2));
         System.out.println("size:" + hashtable.size());
         System.out.println(hashtable.contains("hi"));

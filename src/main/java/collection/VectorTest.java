@@ -9,7 +9,7 @@ import java.util.Vector;
  * 2017/3/29 14:00
  * JavaSE_2017.
  */
-public class VectorTest {
+public class VectorTest extends Vector {
     public static void main(String[] args) {
         Vector<String> vector = new Vector<>();
 
@@ -62,5 +62,8 @@ public class VectorTest {
         for (Integer integer : integers) {
             System.out.println(integer);
         }
+
+        VectorTest vectorTest = new VectorTest();
+        System.out.println("------------------------>"+vectorTest.elementData.length);
     }
 }

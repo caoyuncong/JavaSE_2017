@@ -23,6 +23,15 @@ public class StaticTest {
         System.out.println(jerry.age);
         System.out.println(jerry.married);
 
+
+    }
+
+    public StaticTest() {
+    }
+
+    public void n() {
+         int m;
+        System.out.println("kkk");
     }
 }
 

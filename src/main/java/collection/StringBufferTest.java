@@ -10,6 +10,7 @@ public class StringBufferTest {
         // java.lang.String
         // buffer 缓冲区\ ['bʌfə]
 
+
         StringBuffer stringBuffer = new StringBuffer();
         System.out.println(stringBuffer);
 
