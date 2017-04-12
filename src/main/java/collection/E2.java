@@ -17,38 +17,16 @@ public class E2 {
         map.put("Jerry", 3000.0);
         map.put("Kim", 5000.0);
 
-        Iterator<Map.Entry<String, Double>> iterator = map.entrySet().iterator();
+        Iterator<String> iterator = map.keySet().iterator();
         while (iterator.hasNext()) {
-            Map.Entry<String, Double> entry = iterator.next();
-            System.out.println(iterator);
+            String next = iterator.next();
+            System.out.println(next);
+            System.out.println(next + ">" + map.get(next));
         }
+            System.out.println(map.get("Jack"));
 
-    }
-}
+        map.remove("Tom");
+        System.out.println(map);
 
-
-class Staff {
-    private String name;
-    private double salary;
-
-    public Staff(String name, double salary) {
-        this.name = name;
-        this.salary = salary;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
     }
 }
