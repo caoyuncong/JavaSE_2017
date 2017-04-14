@@ -1,0 +1,103 @@
+#counter {
+    width: 1000px;
+    background: blue;
+}
+
+#logo {
+    width: 1000px;
+    height: 100px;
+    background: green;
+}
+
+.imga {
+    width: 177px;
+    height: 66px;
+    padding: 20px;
+    float: left;
+}
+
+#logo .suo input{
+    width: 126px;
+    height: 40px;
+    float: left;
+}
+
+#logo .suo button {
+    width: 43px;
+    height: 40px;
+    float: left;
+}
+
+#head {
+    width: 1000px;
+    height: 30px;
+    background: pink;
+    text-decoration: none;
+}
+
+#banner {
+    width: 1000px;
+    height: 60px;
+    background: yellow;
+}
+
+#banner img {
+    width: 942px;
+    height: 53px;
+
+}
+
+#main {
+    width: 1000px;
+    height: 500px;
+    background: red;
+}
+
+#left {
+    width: 600px;
+    height: 500px;
+    background: pink;
+    float: left;
+}
+
+#left_t {
+    font-size: 20px;
+    border-bottom: black solid 1px;
+}
+
+.imgc .img1 {
+    float: left;
+}
+.imgc .img2 {
+    float: left;
+
+}
+.imgc .img3 {
+    float: left;
+
+}
+.imgd.img4 {
+    float: left;
+
+}
+
+.imgd .img5 {
+    float: left;
+}
+
+.imgd .img6 {
+    float: left;
+
+}
+#right {
+    width: 400px;
+    height: 500px;
+    background: purple;
+    float: left;
+}
+
+#footer {
+    width: 1000px;
+    height: 200px;
+    background: brown;
+}

@@ -21,8 +21,10 @@ public class ListIteratorTest {
         System.out.println(listIterator);
         //next
         while (listIterator.hasNext()) {
-            listIterator.add("hjj");
-            System.out.println(listIterator.next());
+            System.out.println(listIterator.nextIndex());
+            listIterator.add("d");
+            String next = listIterator.next();
+            System.out.println(next);
         }
 
         //prev

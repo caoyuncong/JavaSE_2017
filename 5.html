@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <input type="button" value="-" id="btn">
+    <input type="text" value="1" id="number">
+    <input type="button" value="+" id="addBtn">
+    单价：<span id="unit_price">120.70</span>元
+    总价：<span id="total_price">120.70</span>元
+
+</div>
+<script>
+    var btn = document.getElementById('btn'), // 减号
+        number = document.getElementById('number'), // 数量
+        addBtn = document.getElementById('addBtn'), // 加号
+        unit_price = document.getElementById('unit_price').innerHTML, // 单价
+        total_price = document.getElementById('total_price'); // 总价
+
+    // 点击加号 数量加一 总价相应增加
+
+    addBtn.onclick = function () {
+        var num = ++number.value;
+        total_price.innerHTML = (num * unit_price).toFixed(2);
+
+    }
+    // 点击减号 数量减一 总价相应减少
+    btn.onclick = function () {
+        var num1 = number.value;
+        // 小于等于1时，不再减少
+        if (num1 <= 1) {
+            num1 = 1;
+        } else {
+            num = --number.value;
+            total_price.innerHTML = (num * unit_price).toFixed(2);
+        }
+    }
+
+</script>
+</body>
+</html>

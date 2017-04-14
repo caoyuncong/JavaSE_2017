@@ -11,12 +11,12 @@ import java.util.LinkedHashSet;
  */
 public class ArraysTest {
     public static void main(String[] args) {
-//        String[] strings = {"a", "b", "c", "d", "e"};
+//        String[] strings = {"a", "b", "c", "d"};
 //        System.out.println(Arrays.toString(strings));
 //        System.out.println(Arrays.binarySearch(strings, "c"));
-//        String[] strings1 = Arrays.copyOf(strings, 3);
+//        String[] strings1 = Arrays.copyOf(strings, 5);
 //        System.out.println(Arrays.toString(strings1));
-//        System.out.println(Arrays.toString(Arrays.copyOfRange(strings, 1, 5)));
+//        System.out.println(Arrays.toString(Arrays.copyOfRange(strings, 1, 3)));
 //        Arrays.sort(strings);
 //        System.out.println(Arrays.toString(strings));
 
@@ -24,11 +24,7 @@ public class ArraysTest {
         strings.add("a");
         strings.add("1");
         strings.add("c");
+//        Iterator<String> iterator=strings.
 
-        Iterator<String> iterator = strings.iterator();
-        while (iterator.hasNext()) {
-            String next = iterator.next();
-
-        }
     }
 }

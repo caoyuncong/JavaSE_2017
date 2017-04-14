@@ -13,13 +13,13 @@ public class LinkedHashMapTest {
         linkedHashMap.put(1, "s");
         linkedHashMap.put(-1, "dh");
         linkedHashMap.put(100, "hgj");
+        linkedHashMap.put(null, null);
 
         System.out.println(linkedHashMap.size());
-
         System.out.println(linkedHashMap.get(-1));
 
         for (Integer integer : linkedHashMap.keySet()) {
-            System.out.println(integer);
+            System.out.println(integer+">"+linkedHashMap.get(integer));
         }
     }
 }

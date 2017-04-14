@@ -37,7 +37,7 @@ public class E2 {
         map.remove("Tom");
         System.out.println(map);
         System.out.println(map.get("Jack"));
-        map.put("Jack", 1500.0);
+        map.put("Jack", 1500.0); // 用put方法修改
         System.out.println(map.get("Jack"));
 
         for (String s : map.keySet()) {
