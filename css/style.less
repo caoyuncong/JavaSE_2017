@@ -1,0 +1,30 @@
+//@import "";
+.wh(@a,@b,@c){
+  width: @a;
+  height: @b;
+  background: @c;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.r{
+  position: absolute;
+}
+
+@red: red;
+header {
+  color: @red;
+}
+
+.box {
+  display: -webkit-box; // 弹性盒
+  -webkit-box-orient: vertical;
+  // 下面的盒子垂直分布
+  -webkit-box-flex: 1;
+}
+.container {
+  .box();
+}

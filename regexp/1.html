@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var patt = /[A-z]/g;
+        console.log('ascDf123'.match(patt));
+        patt.compile('(red|green|blue)', 'gi');
+        console.log('redGreenbBlue'.match(patt));
+
+        patt.compile('[\u4e00-\u9fbb]','ig');
+        console.log('勿忘我'.match(patt));
+
+        patt.compile(/\./g); //
+        console.log('as.cDf.123'.match(patt));
+
+        patt.compile(/./g); //
+        console.log('as.cDf.123\n\r\t'.match(patt));
+
+        patt.compile(/\d/g);
+        console.log('748699200'.match(patt));
+
+        patt.compile(/\D/g);
+        console.log('748699200@'.match(patt));
+
+        patt.compile(/\w/g);
+//        patt.compile('\w','g');
+//        console.log('euhfjk00457588_! '.match(patt));
+
+        console.log('euhfjk00457588_! '.match(patt));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

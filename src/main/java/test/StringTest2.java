@@ -28,11 +28,12 @@ toUpperCase
 trim
 valueOf
  */
-        System.out.println(string.concat("you"));
+        System.out.println(string.concat(""));
         System.out.println(string.contains("h"));
         System.out.println(string.endsWith("o"));
         System.out.println(string.equals("helllo"));
         System.out.println(string.indexOf('l'));
+        System.out.println("--------"+string.indexOf('l',5));
         System.out.println(string.lastIndexOf('l'));
         System.out.println(string.length());
         System.out.println(string.replace('l', 'a'));

@@ -10,7 +10,7 @@ public class StringTest {
         char[] chars = {'H', 'e', 'l', 'l', 'o'};
         String s = String.valueOf(chars); // valueOf 是静态方法 类名直接调用
         System.out.println(s);
-        String s1 = String.copyValueOf(chars); // copyValueOf 是静态方法 类名直接调用
+        String s1 = String.copyValueOf(chars,2,2); // copyValueOf 是静态方法 类名直接调用
         System.out.println(s1);
         String s2 = new String(chars);
         System.out.println(s2);
@@ -40,10 +40,11 @@ public class StringTest {
 
         String s9 = "heplslll2o";
         for (byte b : s9.getBytes()) {
-            System.out.println(b);
+            System.out.println("======="+b);
         }
 
-        System.out.println(s9.indexOf('l', 3));
+
+        System.out.println(s9.indexOf('l', 4));
         System.out.println(s9.indexOf('l'));
         System.out.println(s9.lastIndexOf('l', 5));
         s5 = "";
